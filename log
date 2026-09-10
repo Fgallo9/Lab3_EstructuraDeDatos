@@ -97,3 +97,15 @@ Thu Sep 10 07:38:31 PM UTC 2026:
  tests:  16|1
 total_score: 50/60
 9d6e457
+Thu Sep 10 07:54:54 PM UTC 2026: 
+ hashmap.c | 22 ++++++++++++++++++++++
+ 1 file changed, 22 insertions(+)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:183:21: error: ‘capcityViejo’ undeclared (first use in this function); did you mean ‘capacityViejo’?
+  183 |     map->capacity = capcityViejo * 2;
+      |                     ^~~~~~~~~~~~
+      |                     capacityViejo
+hashmap.c:183:21: note: each undeclared identifier is reported only once for each function it appears in
+c62a47e
