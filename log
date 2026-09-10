@@ -56,3 +56,9 @@ hashmap.c:69:23: error: ‘posicion’ undeclared (first use in this function); 
       |                       posInicial
 hashmap.c:69:23: note: each undeclared identifier is reported only once for each function it appears in
 737aeac
+Thu Sep 10 06:40:44 PM UTC 2026: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  5|4
+total_score: 20/60
+c0bdd3a
