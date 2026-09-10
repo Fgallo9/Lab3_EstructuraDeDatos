@@ -4,3 +4,22 @@ Thu Sep 10 04:46:49 PM UTC 2026:
  tests:  0|7
 total_score: 0/60
 4316294
+Thu Sep 10 06:15:59 PM UTC 2026: 
+ hashmap.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘createMap’:
+hashmap.c:49:21: error: ‘HasMap’ undeclared (first use in this function); did you mean ‘HashMap’?
+   49 |     HashMap *map = (HasMap *) malloc(sizeof(HashMap));
+      |                     ^~~~~~
+      |                     HashMap
+hashmap.c:49:21: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:49:29: error: expected expression before ‘)’ token
+   49 |     HashMap *map = (HasMap *) malloc(sizeof(HashMap));
+      |                             ^
+hashmap.c:50:10: error: ‘HashMap’ {aka ‘struct HashMap’} has no member named ‘bucket’; did you mean ‘buckets’?
+   50 |     map->bucket = (Pair **) calloc(capacity, sizeof(Pair *));
+      |          ^~~~~~
+      |          buckets
+8bf2190
