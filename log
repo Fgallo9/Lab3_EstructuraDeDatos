@@ -62,3 +62,14 @@ Thu Sep 10 06:40:44 PM UTC 2026:
  tests:  5|4
 total_score: 20/60
 c0bdd3a
+Thu Sep 10 06:56:19 PM UTC 2026: 
+ hashmap.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:91:16: error: implicit declaration of function ‘has’; did you mean ‘hash’? [-Wimplicit-function-declaration]
+   91 |     long pos = has(key, map->capacity);
+      |                ^~~
+      |                hash
+d70ae10
