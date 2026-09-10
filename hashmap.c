@@ -44,7 +44,8 @@ int is_equal(void* key1, void* key2){
 // Esta función crea una variable de tipo HashMap, inicializa el arreglo de buckets con casillas nulas, inicializa el resto de variables y retorna el mapa. 
 // Inicialice el índice current a -1.
 
-HashMap * createMap(long capacity) {
+HashMap * createMap(long capacity)
+{
 
     return NULL;
 }
@@ -58,7 +59,8 @@ HashMap * createMap(long capacity) {
 //    c - Ingrese el par en la casilla que encontró.
 // No inserte claves repetidas. Recuerde que el arreglo es circular. Recuerde actualizar la variable size.
 
-void insertMap(HashMap * map, char * key, void * value) {
+void insertMap(HashMap * map, char * key, void * value)
+{
 
 }
 
@@ -69,7 +71,8 @@ void insertMap(HashMap * map, char * key, void * value) {
 //   c - Si llega a una casilla nula, retorne NULL inmediatamente (no siga avanzando, la clave no está)
 // Recuerde actualizar el índice current a la posición encontrada. Recuerde que el arreglo es circular.
 
-Pair * searchMap(HashMap * map,  char * key) {   
+Pair * searchMap(HashMap * map,  char * key)
+{   
 
 
     return NULL;
@@ -81,7 +84,8 @@ Pair * searchMap(HashMap * map,  char * key) {
 // No elimine el par, sólo invalídelo asignando NULL a la clave (pair->key=NULL). 
 // Recuerde actualizar la variable size.
 
-void eraseMap(HashMap * map,  char * key) {    
+void eraseMap(HashMap * map,  char * key)
+{    
 
 
 }
@@ -90,12 +94,14 @@ void eraseMap(HashMap * map,  char * key) {
 // Pair * nextMap(HashMap * map) retorna el siguiente Pair del arreglo buckets a partir índice current. 
 // Recuerde actualizar el índice.
 
-Pair * firstMap(HashMap * map) {
+Pair * firstMap(HashMap * map)
+{
 
     return NULL;
 }
 
-Pair * nextMap(HashMap * map) {
+Pair * nextMap(HashMap * map)
+{
 
     return NULL;
 }
@@ -112,7 +118,8 @@ Pair * nextMap(HashMap * map) {
 //   d - Inicialice size a 0.
 //   e - Inserte los elementos válidos del arreglo old_buckets en el mapa (use la función insertMap que ya implementó).
 
-void enlarge(HashMap * map) {
+void enlarge(HashMap * map)
+{
     enlarge_called = 1; //no borrar (testing purposes)
 
 
