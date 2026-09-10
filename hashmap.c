@@ -180,7 +180,7 @@ void enlarge(HashMap * map)
     long capacityViejo = map->capacity;
 
     //b.
-    map->capacity = capcityViejo * 2;
+    map->capacity = capacityViejo * 2;
     
     //c.
     map->buckets = (Pair **) calloc(map->capacity, sizeof(Pair *));

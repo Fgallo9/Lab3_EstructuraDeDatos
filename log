@@ -109,3 +109,9 @@ hashmap.c:183:21: error: ‘capcityViejo’ undeclared (first use in this functi
       |                     capacityViejo
 hashmap.c:183:21: note: each undeclared identifier is reported only once for each function it appears in
 c62a47e
+Thu Sep 10 07:55:09 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  17|0
+total_score: 60/60
+d6c5aaa
