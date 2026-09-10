@@ -65,7 +65,18 @@ HashMap * createMap(long capacity)
 
 void insertMap(HashMap * map, char * key, void * value)
 {
+    long pos = hash(key, map->capacity);
+    long posInicial = posicion;
 
+    while (map->buckets[pos] != NULL && map->buckets[pos]->key != NULL)
+    {
+        if (is_equal(map->buckets[pos]->key, key)) return;
+        pos = (pos + 1) & map->capacity;
+        if (pos == posInicial) return;
+    }
+    map->buckets[pos] = createPair(key, value);
+    map->size++;
+    map->current = pos;
 }
 
 // 3. Implemente la función Pair * searchMap(HashMap * map, char * key), la cual retorna el Pair asociado a la clave ingresada. 
